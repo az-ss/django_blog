@@ -30,6 +30,7 @@ case $i in
     ;;
     -m | --migrate)
         python_env_activate
+        python manage.py makemigrations
         python manage.py migrate
     ;;
     -r | --run)
