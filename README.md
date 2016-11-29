@@ -1,6 +1,4 @@
 Simple Blog
 ===========
 
-**Requirements:**
-1. Python 2
-2. Django
+**Requirements:** Python 2, Django
