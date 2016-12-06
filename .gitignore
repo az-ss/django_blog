@@ -84,3 +84,4 @@ Californium.properties
 *.war
 *.jar
 /venv
+/static/profile_img/*

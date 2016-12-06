@@ -19,6 +19,7 @@ from django.contrib import admin
 from core import views
 
 urlpatterns = [
+    url(r'^register/$', views.register, name='register'),
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
 ]
