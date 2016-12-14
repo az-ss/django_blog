@@ -12,10 +12,10 @@ def index(request):
 def register(request):
     registered = False
     if request.method == 'POST':
-        user_form = UserForm(data=request.POST)
+        user_form_new = UserForm(data=request.POST)
         profile_form = UserProfileForm(data=request.POST)
-        if user_form.is_valid() and profile_form.is_valid():
-            user = user_form.save()
+        if user_form_new.is_valid() and profile_form.is_valid():
+            user = user_form_new.save()
             user.set_password(user.password)
             user.save()
             profile = profile_form.save(commit=False)
